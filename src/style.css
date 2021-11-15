@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    width: 100%;
+}
+
+form{
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+.checkbox.on {
+    background-position: 0 -1349px;
+}
+
+.checkbox {
+    width: 22px;
+    height: 22px;
+    margin: 0 2px;
+    text-indent: -99999px;
+    
+}
+
+.con_box {
+    padding: 10px;
+    min-width: auto;
+    zoom: 1;
+}
+
+[class^=col-] {
+    float: left;
+}
+
+.labelinput {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.button{
+    @apply mx-2 px-3 rounded-md;
+}

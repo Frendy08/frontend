@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/tailwind.css">
+    <title>Document</title>
+</head>
+<body style=" background: #0b1c2e no-repeat fixed center top;">
+    <div class="container relative">
+        <div class="md:flex mx-auto px-12 justify-between mt-5 items-center ">
+
+            <div class="container mx-auto px-36">
+                <a href="index.html"><img src="/public/img/logo baru.png" class="w-52 h-40" alt=""></a>
+            </div>
+
+            <div class="container">
+                <form action="Login.html" id="formlogin">
+                    <div class="form-inline">
+                        <div class="flex">
+                            <div class="flex">
+                                <label class="labelinput absolute" for="username">Username</label>
+                                <input type="text" class="input-sm md:w-40" width="150px" placeholder="username">
+                            </div>
+                            <div class="ml-1">
+                                <label class="labelinput absolute" for="password">Password</label>
+                                <input type="password" class="input-sm md:w-40" width="150px" placeholder="password">
+                            </div>
+                            <button type="submit" class="text-white mx-5 px-4 rounded-md bg-red-600 hover:bg-red-700 flex">Sign In</button>
+                        </div>
+                    </div>
+
+                    <div class="form-inline my-2">
+                        <div class="flex">
+                            <div class="flex">
+                                <label class="labelinput absolute" for="captcha">Captcha</label>
+                                <input type="text" class="input-sm md:w-40" id="captcha" placeholder="Captcha"  name="code" id="code" maxlength="4" onKeyPress="test(this,event);" tabindex="13" >
+                            </div>
+                            <label>
+                                <span id="captcha_div_login"><img class="captcha ml-1" src="https://91.233.198.11/user/captcha_get/55/23/4/sess_code_user_login" />
+                            </span>
+                            </label>
+                            <div>
+                                <a class="text-yellow-400" href="" id="lupapassword">Lupa Password?</a>
+                                <a href="" id="register" type="submit" class="button text-white bg-yellow-600 hover:bg-yellow-700 justify-between">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-36">
+        <li class="flex ml-2">
+            <div class="text-white text-center box-border rounded-md w-36 h-7 bg-gray-500 hover:bg-gray-600 font-serif">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="text-white text-center box-border rounded-md w-36 h-7 bg-green-500 hover:bg-green-700 font-serif">
+                <a href="">Games</a>
+            </div>
+            <div class="text-white text-center box-border rounded-md w-36 h-7 bg-gray-500 hover:bg-gray-600 font-serif">
+                <a href="register.html">Daftar</a>
+            </div>
+            <div class="text-white text-center box-border rounded-md w-36 h-7 bg-gray-500 hover:bg-gray-600 font-serif">
+                <a href="index.html">Panduan</a>
+            </div>
+            <div class="text-white text-center box-border rounded-md w-36 h-7 bg-gray-500 hover:bg-gray-600 font-serif">
+                <a href="index.html">Refferal</a>
+            </div>
+            <div class="text-white text-center box-border rounded-md w-36 h-7 bg-gray-500 hover:bg-gray-600 font-serif">
+                <a href="index.html">Promo</a>
+            </div>
+            <div class="text-white text-center box-border rounded-md w-36 h-7 bg-gray-500 hover:bg-gray-600 font-serif">
+                <a href="index.html">Nawala</a>
+            </div>
+        </li>
+    </div>
+    
+    <div class="container mx-auto px-36">
+        <li class="flex ml-2">
+                <div class="text-white text-center box-border rounded-md w-36 h-7 bg-green-500 hover:bg-green-700 font-serif">
+                    <a href="dingdong.html">Dingdong</a>
+                </div>
+                <div class="text-white text-center box-border rounded-md w-36 h-7 bg-green-500 hover:bg-green-700 font-serif">
+                    <a href="togel.html">Togel</a>
+                </div>
+                <div class="text-white text-center box-border rounded-md w-36 h-7 bg-green-500 hover:bg-green-700 font-serif">
+                    <a href="index.html">Live Casino</a>
+                </div>
+                <div class="text-white text-center box-border rounded-md w-36 h-7 bg-green-500 hover:bg-green-700 font-serif">
+                    <a href="cardgames.html">Card Games</a>
+                </div>
+                <div class="text-white text-center box-border rounded-md w-36 h-7 bg-green-500 hover:bg-green-700 font-serif">
+                    <a href="index.html">Sportsbook</a>
+                </div>
+                <div class="text-white text-center box-border rounded-md w-36 h-7 bg-green-500 hover:bg-green-700 font-serif">
+                    <a href="index.html">E-Games</a>
+                </div>
+                <div class="text-white text-center box-border rounded-md w-36 h-7 bg-green-500 hover:bg-green-700 font-serif">
+                    <a class="nav-a" href=""></a>
+                </div>
+            </div>
+        </li>
+    </div>
+
+    <div class="container mx-auto px-36">
+        <div class="flex pt-5 justify-center">
+            <div class="md:mx-2 md:h-40 md:w-60 group">
+                <h4 class="bg-green-500 text-center group-hover:text-red-600 font-bold rounded-md">Poke Dealer</h4>
+                <a href=""><img class="img-responsive" src="/public/img/pokerdealer.png"></a>
+                <h5 class="bg-gray-500 text-center group-hover:bg-white rounded-md">
+                    <a href="" class="text-white group-hover:text-gray-900">Play</a>
+                </h5>
+            </div>
+            <div class="md:mx-2 md:h-40 md:w-60 group">
+                <h4 class="bg-green-500 text-center group-hover:text-red-600 font-bold rounded-md">joker Dealer</h4>
+                <a href=""><img class="img-responsive" src="/public/img/jokerdealer.png"></a>
+                <h5 class="bg-gray-500 text-center group-hover:bg-white rounded-md">
+                    <a href="" class="text-white group-hover:text-gray-900">Play</a>
+                </h5>
+            </div>
+            <div class="md:mx-2 md:h-40 md:w-60 group">
+                <h4 class="bg-green-500 text-center group-hover:text-red-600 font-bold rounded-md">Poker Omaha</h4>
+                <a href=""><img class="img-responsive pt-10" src="/public/img/omh.png"></a>
+                <h5 class="bg-gray-500 text-center group-hover:bg-white rounded-md">
+                    <a href="" class="text-white group-hover:text-gray-900 ">Play</a>
+                </h5>
+            </div>
+            <div class="md:mx-2 md:h-40 md:w-60 group">
+                <h4 class="bg-green-500 text-center group-hover:text-red-600 font-bold rounded-md">Adu-Q</h4>
+                <a href=""><img class="img-responsive" src="/public/img/aduq.png"></a>
+                <h5 class="bg-gray-500 text-center group-hover:bg-white rounded-md">
+                    <a href="" class="text-white group-hover:text-gray-900">Play</a>
+                </h5>
+            </div>
+        </div>
+
+        <div class="flex pt-36 justify-center">
+            <div class="md:mx-2 md:h-40 md:w-60 group">
+                <h4 class="bg-green-500 text-center group-hover:text-red-600 font-bold rounded-md">Bola Tangkas</h4>
+                <a href=""><img class="img-responsive" src="/public/img/bolatangkas.png"></a>
+                <h5 class="bg-gray-500 text-center group-hover:bg-white rounded-md">
+                    <a href="" class="text-white group-hover:text-gray-900">Play</a>
+                </h5>
+            </div>
+            <div class="md:mx-2 md:h-40 md:w-60 group">
+                <h4 class="bg-green-500 text-center group-hover:text-red-600 font-bold rounded-md">Big Two</h4>
+                <a href=""><img class="img-responsive" src="/public/img/bigtwo.png"></a>
+                <h5 class="bg-gray-500 text-center group-hover:bg-white rounded-md">
+                    <a href="" class="text-white group-hover:text-gray-900">Play</a>
+                </h5>
+            </div>
+            <div class="md:mx-2 md:h-40 md:w-60 group">
+                <h4 class="bg-green-500 text-center group-hover:text-red-600 font-bold rounded-md">Baccarat</h4>
+                <a href=""><img class="img-responsive pt-10 pb-7" src="/public/img/baccarat.png"></a>
+                <h5 class="bg-gray-500 text-center group-hover:bg-white rounded-md">
+                    <a href="" class="text-white group-hover:text-gray-900">Play</a>
+                </h5>
+            </div>
+            <div class="md:mx-2 md:h-40 md:w-60 group">
+                <h4 class="bg-green-500 text-center group-hover:text-red-600 font-bold rounded-md">Blackjack</h4>
+                <a href=""><img class="img-responsive" src="/public/img/blackjack.png"></a>
+                <h5 class="bg-gray-500 text-center group-hover:bg-white rounded-md">
+                    <a href="" class="text-white group-hover:text-gray-900">Play</a>
+                </h5>
+            </div>
+        </div>
+
+        <div class="flex pt-36 justify-center">
+            <div class="md:mx-2 md:h-40 md:w-60 group">
+                <h4 class="bg-green-500 text-center group-hover:text-red-600 font-bold rounded-md">Texas Poker</h4>
+                <a href=""><img class="img-responsive" src="/public/img/texaspoker.png"></a>
+                <h5 class="bg-gray-500 text-center group-hover:bg-white rounded-md">
+                    <a href="" class="text-white group-hover:text-gray-900">Play</a>
+                </h5>
+            </div>
+            <div class="md:mx-2 md:h-40 md:w-60 group">
+                <h4 class="bg-green-500 text-center group-hover:text-red-600 font-bold rounded-md">Domino QQ</h4>
+                <a href=""><img class="img-responsive" src="/public/img/dominoqq.png"></a>
+                <h5 class="bg-gray-500 text-center group-hover:bg-white rounded-md">
+                    <a href="" class="text-white group-hover:text-gray-900">Play</a>
+                </h5>
+            </div>
+            <div class="md:mx-2 md:h-40 md:w-60 group">
+                <h4 class="bg-green-500 text-center group-hover:text-red-600 font-bold rounded-md">Ceme Fighter</h4>
+                <a href=""><img class="img-responsive" src="/public/img/cemefighter.png"></a>
+                <h5 class="bg-gray-500 text-center group-hover:bg-white rounded-md">
+                    <a href="" class="text-white group-hover:text-gray-900">Play</a>
+                </h5>
+            </div>
+            <div class="md:mx-2 md:h-40 md:w-60 group">
+                <h4 class="bg-green-500 text-center group-hover:text-red-600 font-bold rounded-md">Three Kings</h4>
+                <a href=""><img class="img-responsive pt-10" src="/public/img/tkg.png"></a>
+                <h5 class="bg-gray-500 text-center group-hover:bg-white rounded-md">
+                    <a href="" class="text-white group-hover:text-gray-900">Play</a>
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-36 pt-56 ">
+        <div class="container mx-auto px-4">
+            <p class="bg-green-500 text-white text-center justify-items-center text-4xl shadow-md rounded-xl">Social Media</p>
+        </div>
+		<div class="md:flex justify-center pt-14">
+			<div class=" mx-10 mr-10 my-5 justify-center">
+				<a target="_blank" href=""><img src="/public/img/logo instagram.png" class="w-24"></a>
+			</div>
+			<div class=" mx-22 ml-20 mr-1 my-1 justify-center">
+				<a target="_blank" href=""><img src="/public/img/logo facebook.png" class="w-32"></a>
+			</div>
+			<div class=" mx-24 ml-28 mr-5 my-5 justify-center">
+				<a target="_blank" href=""><img src="/public/img/logo twitter.png" class="w-24"></a>
+			</div>
+			<div class=" mx-32 mr-16 my-8 justify-center">
+				<a target="_blank" href=""><img src="/public/img/logo youtube.png" class="w-24"></a>
+			</div>
+		</div>
+	</div>
+
+    <div class="container mx-auto px-40 pt-20">
+			<div id="bank">
+                <p class="bg-green-500 text-white text-center justify-items-center text-4xl shadow-md rounded-xl">SISTEM PEMBAYARAN</p>
+				<div class="flex">
+					<div class="md:mx-2 w-52 my-auto">
+						<img src="/public/img/bank bca.png">
+					</div>
+
+					<div class="md:mx-2 w-52 my-auto">
+						<img src="/public/img/bank mandiri.png">
+					</div>
+
+					<div class="md:mx-2 w-52 my-auto">
+						<img src="/public/img/bank bni.png">
+					</div>
+
+					<div class="md:mx-2 w-52 my-auto">
+						<img src="/public/img/bank bri.png">
+					</div>
+
+					<div class="md:mx-2 w-52 my-16">
+						<img src="/public/img/bank danamon.png">
+					</div>
+				</div>
+			</div>
+	</div>
+    <footer>
+      <div class="container">
+          <div class="text-white text-center">
+            <small>Copyright  &copy; 2021 UlalaCasino. All Rights Reserved. </small>
+          </div>
+      </div>
+    </footer>
+    
+</body>
+</html>
